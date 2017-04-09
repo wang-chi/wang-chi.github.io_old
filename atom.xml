@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-09T05:59:42.000Z</updated>
+  <updated>2017-04-09T06:01:10.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/04/09/Google%20AdWords%202017%20%E9%A1%8C%E5%BA%AB/"/>
     <id>http://yoursite.com/2017/04/09/Google AdWords 2017 題庫/</id>
     <published>2017-04-08T17:02:00.000Z</published>
-    <updated>2017-04-09T05:59:42.000Z</updated>
+    <updated>2017-04-09T06:01:10.000Z</updated>
     
     <content type="html"><![CDATA[<p>剛好看到最近有數位火星人計劃，就順便把他的教學影片看了一輪，希望對大家有幫助～</p>
 <p><a href="https://www.youtube.com/watch?v=JAT-jxF4et4&amp;index=1&amp;list=PLPh89N96p446NsAxXP5ZuuglOUZG_l6-w" target="_blank" rel="external">官方的教學影片</a></p>
@@ -85,7 +85,7 @@
 <p><br></p>
 <blockquote>
 <p>11.如果廣告活動持續用完平均每日預算，會怎麼樣？<br>Ａ 系統會調降平均單次點擊出價<br>Ｂ 系統會自動調整您的預算<br><font color="#D00000">Ｃ 廣告活動中廣告的顯示頻率會降低</font><br>Ｄ 廣告活動中的廣告將在張單周期剩餘的時間內停止顯示</p>
-<font color="#002F6C">【說明】<br><br>Ａ 調降在品質分數有關，跟每日預算無關<br>Ｃ 因為系統為了延長廣告撥出的時間，所以不會每次的搜尋都出現。<br>Ｄ 和帳單無關</font>
+<font color="#002F6C">【說明】<br>Ａ 調降在品質分數有關，跟每日預算無關<br>Ｃ 因為系統為了延長廣告撥出的時間，所以不會每次的搜尋都出現。<br>Ｄ 和帳單無關</font>
 
 </blockquote>
 <p><br></p>
@@ -95,7 +95,7 @@
 <p><br></p>
 <blockquote>
 <p>13.您指導一名新的客戶經理如何建立搜尋廣告活動，告訴他應該將廣告群組中類似的關鍵字歸入同一類，因為這麼做可以讓她：<br>Ａ 為每個關鍵字製作一則不同的廣告<br>Ｂ 只建立一則與所有關鍵字相關的廣告<br><font color="#D00000">Ｃ 為每個關鍵字建立多則廣告</font><br>Ｄ 建立多則與所有關鍵字相關的廣告</p>
-<font color="#002F6C">【說明】<br><br>ＡＢ 不同指建立一則廣告<br>Ｄ 代表所有關鍵字都放在同一個群組，代表所有的產品都放在一起，混淆產品的定位，文案就會不精準</font>
+<font color="#002F6C">【說明】<br>ＡＢ 不同指建立一則廣告<br>Ｄ 代表所有關鍵字都放在同一個群組，代表所有的產品都放在一起，混淆產品的定位，文案就會不精準</font>
 
 </blockquote>
 <p><br></p>
@@ -103,6 +103,9 @@
 <p>14.以下何者是在同一個廣告群組中加入多則廣告的好處?<br>Ａ 廣告要顯示在網頁頂端，其廣告群組必須包含多則廣告<br><font color="#D00000">Ｂ AdWords會自動輪播廣告，讓成效最好的廣告更常顯示</font><br>Ｃ 廣告要顯示額外資訊，其廣告群組必須包含多則廣告<br>Ｄ AdWords會自動讓每一則廣告由最相關的關鍵字帶出</p>
 <font color="#002F6C">【說明】<br>用多則文案去測試，ＴＡ喜歡哪種文案，AdWords會讓成效較好的廣告播處較多次</font>
 
+</blockquote>
+<p><br></p>
+<blockquote>
 <p>15.使用者在搜尋客戶的手錶修理店時，會使用非常明確的字詞，例如「古董手錶修理」。想要廣告由這些搜尋字詞帶出，你應該使用：<br>Ａ 詞組比對關鍵字<br><font color="#D00000">Ｂ 完全比對關鍵字</font><br>Ｃ 廣泛比對關鍵字<br>Ｄ 排除比對關鍵字</p>
 <font color="#002F6C">【說明】<br>完全比對關鍵字就在於使用者對於搜尋的字詞非常精準</font>
 
