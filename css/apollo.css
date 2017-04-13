@@ -72,7 +72,7 @@ header .nav-list-item a{font-size:16px;line-height:1.4}
 .post-block .post-info span{margin-left:0.5rem}
 .post-block .post-info a.post-from{margin-left:0.5rem;padding:3px 6px;border-radius:5px;font-size:12px;color:white;background-color:#E36B6B}
 .post-content h2,.post-content h3,.post-content h4,.post-content h5,.post-content h6{position:relative;margin:1em 0}
-.post-content h2:before,.post-content h3:before,.post-content h4:before,.post-content h5:before,.post-content h6:before{content:"#";color:#00bcd4;position:absolute;left:-0.7em;top:-4px;font-size:1.2em;font-weight:bold}
+.post-content h2:before,.post-content h3:before,.post-content h4:before,.post-content h5:before,.post-content h6:before{content:"#";color:#2978A0;position:absolute;left:-0.7em;top:-4px;font-size:1.2em;font-weight:bold}
 .post-content h4:before,.post-content h5:before,.post-content h6:before{content:""}
 .post-content h2,.post-content h3{font-size:22px}
 .post-content h4,.post-content h5,.post-content h6{font-size:18px}
