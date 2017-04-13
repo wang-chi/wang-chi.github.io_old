@@ -36,7 +36,7 @@ fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}
 legend{border:0;padding:0}
 textarea{overflow:auto}
 optgroup{font-weight:bold}
-table{border-collapse:collapse;border-spacing:0}td,th{padding:0}::-moz-selection{color:#FFFFFF;background-color:#00bcd4}::selection{color:#FFFFFF;background-color:#00bcd4}
+table{border-collapse:collapse;border-spacing:0}td,th{padding:0}::-moz-selection{color:#FFFFFF;background-color:#00bcd4}::selection{color:#FFFFFF;background-color:#2978A0}
 html,body{width:100%;height:100%}
 body{margin:0;color:#34495e;font-size:15px;line-height:1.6;background-color:#fff;font-family:'sourcesanspro', 'Helvetica Neue', Arial, sans-serif}
 ul.nav,ul.post-list{margin:0;padding:0;list-style-type:none}
