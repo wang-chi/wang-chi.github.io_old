@@ -64,8 +64,8 @@ header .nav-list-item a{font-size:16px;line-height:1.4}
 .archive{max-width:500px;margin:5em auto}
 .archive .post-item{padding:2px 0 0 50px}
 .archive .post-time,.archive .post-title-link{font-size:1rem}
-.archive .post-title-link{display:block;margin-left:125px;color:#00bcd4;word-break:break-all}
-.archive .post-title-link:hover{border-bottom:0;color:#267B54}
+.archive .post-title-link{display:block;margin-left:125px;color:#063360;word-break:break-all}
+.archive .post-title-link:hover{border-bottom:0;color:#2978A0}
 .archive .post-info{float:left;width:125px;color:#7f8c8d}
 .post{padding-top:1em}.post-block .post-title{margin:0.65em 0;color:#2c3e50;font-size:1.5em}
 .post-block .post-info{color:#7f8c8d;margin:1.2em 0}
