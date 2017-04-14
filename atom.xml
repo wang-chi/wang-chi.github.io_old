@@ -112,6 +112,37 @@
   </entry>
   
   <entry>
+    <title>Bash Shell：檔案篇</title>
+    <link href="http://yoursite.com/2017/04/11/Bash-Shell/"/>
+    <id>http://yoursite.com/2017/04/11/Bash-Shell/</id>
+    <published>2017-04-11T11:41:00.000Z</published>
+    <updated>2017-04-14T05:38:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><p>很多都是基本的小小用法，相信大家一定都非常ＯＫ的</p>
+<h3 id="新增檔案"><a href="#新增檔案" class="headerlink" title="新增檔案"></a>新增檔案</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ mkdir test		//新增資料夾</div><div class="line">$ mkdir test.txt	//新增文字檔</div></pre></td></tr></table></figure>
+<h3 id="複製檔案"><a href="#複製檔案" class="headerlink" title="複製檔案"></a>複製檔案</h3><p>將test.txt複製到test1.txt<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cp test.txt test1.txt</div></pre></td></tr></table></figure></p>
+<h3 id="刪除檔案"><a href="#刪除檔案" class="headerlink" title="刪除檔案"></a>刪除檔案</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ rm test</div><div class="line">$ rm -r test	//會一一確認</div><div class="line">$ rm -rf test	//</div></pre></td></tr></table></figure>
+<h3 id="修改權限"><a href="#修改權限" class="headerlink" title="修改權限"></a>修改權限</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ chmod a+x test.txt</div></pre></td></tr></table></figure>
+<h3 id="編輯檔案"><a href="#編輯檔案" class="headerlink" title="編輯檔案"></a>編輯檔案</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vi test.txt</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;基本用法&quot;&gt;&lt;a href=&quot;#基本用法&quot; class=&quot;headerlink&quot; title=&quot;基本用法&quot;&gt;&lt;/a&gt;基本用法&lt;/h2&gt;&lt;p&gt;很多都是基本的小小用法，相信大家一定都非常ＯＫ的&lt;/p&gt;
+&lt;h3 id=&quot;新增檔案&quot;&gt;&lt;a href=&quot;#新增檔案&quot; cla
+    
+    </summary>
+    
+      <category term="Note" scheme="http://yoursite.com/categories/Note/"/>
+    
+    
+      <category term="bash" scheme="http://yoursite.com/tags/bash/"/>
+    
+      <category term="shell" scheme="http://yoursite.com/tags/shell/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Google AdWords 2017 搜尋聯播網題庫</title>
     <link href="http://yoursite.com/2017/04/10/Google-AdWords-2017-%E6%90%9C%E5%B0%8B%E8%81%AF%E6%92%AD%E7%B6%B2/"/>
     <id>http://yoursite.com/2017/04/10/Google-AdWords-2017-搜尋聯播網/</id>

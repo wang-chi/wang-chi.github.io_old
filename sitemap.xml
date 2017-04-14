@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2017/04/11/Bash-Shell/</loc>
+    
+    <lastmod>2017-04-14T05:38:44.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/Categories/index.html</loc>
     
     <lastmod>2017-04-14T05:31:07.000Z</lastmod>
