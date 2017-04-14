@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-14T04:08:14.000Z</updated>
+  <updated>2017-04-14T04:13:50.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,18 +20,18 @@
     <link href="http://yoursite.com/2017/04/13/%E6%A8%B9%E8%8E%93%E6%B4%BE%EF%BC%8D%E4%B8%83%E6%AE%B5%E9%A1%AF%E7%A4%BA%E5%99%A8%E8%BC%AA%E6%92%AD/"/>
     <id>http://yoursite.com/2017/04/13/樹莓派－七段顯示器輪播/</id>
     <published>2017-04-13T09:51:00.000Z</published>
-    <updated>2017-04-14T04:08:14.000Z</updated>
+    <updated>2017-04-14T04:13:50.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="樹莓派－七段顯示器輪播"><a href="#樹莓派－七段顯示器輪播" class="headerlink" title="樹莓派－七段顯示器輪播"></a>樹莓派－七段顯示器輪播</h1><p>今天<del>大刀老師</del>突然說想起來下禮拜是期中考，<br>就<del>靈機一動</del> 認真的說下週要考七段顯示器，<br>如果是本身就是工科的大大們來說應該只是 a piese of cake<br>但是不才我上上週才剛學一下<del>(根本已經忘光光)</del><br>這實在是用時間逼你學好啊～～</p>
 <p>廢話不多說來說一下怎麼做<br>順便抄個小筆記哈哈</p>
 <h2 id="動手手"><a href="#動手手" class="headerlink" title="動手手"></a>動手手</h2><p>概念說一下～<br>要讓顯示器可以從0到9輪著播放<br>當然中間要休息一下（但也是泡個茶喝個茶那麼久）</p>
 <h4 id="作法"><a href="#作法" class="headerlink" title="作法"></a>作法</h4><p>程式怎麼code</p>
 <p>Step1：在最底層建立一個open.ssh<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ cd ..</div><div class="line">$ vi open.ssh</div></pre></td></tr></table></figure></p>
-<p>Step2：在vi模式下，編輯open.ssh檔案<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">#!/bin/bash</div></pre></td></tr></table></figure></p>
+<p>Step2：在vi模式下，編輯open.ssh檔案<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#!/bin/bash</span></div><div class="line">...</div></pre></td></tr></table></figure></p>
 <p>開頭一定要是 #!/bin/bash 這個，不然不能執行喔！！！</p>
 <p>記得要 :wq 離開喔！！！</p>
-<p>Step3：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure></p>
-<p>Step4：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure></p>
+<p>Step3：給予權限<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ ls -al	//可以看到目前資料夾下所有檔案的屬性權限</div><div class="line">$ chmod a+x open.ssh</div></pre></td></tr></table></figure></p>
+<p>Step4：執行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ./open.ssh</div></pre></td></tr></table></figure></p>
 <h4 id="程式碼：單一條"><a href="#程式碼：單一條" class="headerlink" title="程式碼：單一條"></a>程式碼：單一條</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ cd /sys/class/gpio	//先切換到那個資料夾下面</div><div class="line">$ echo 14 &gt; export	//指定gpio 14，這時候資料夾內就會增加一個gpio14</div><div class="line">$ cd gpio14</div><div class="line">$ echo out &gt; direction //給予權限，如果這邊不這麼做的話會出現[Error]permission denied</div><div class="line">$ echo 1 &gt; value	// 1-&gt;通電（亮燈） 2-&gt;不通電（關燈）</div></pre></td></tr></table></figure>
 <h4 id="程式碼：一個數字"><a href="#程式碼：一個數字" class="headerlink" title="程式碼：一個數字"></a>程式碼：一個數字</h4><p>目的：讓七段顯示器跑出數字1</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">list=(2 18)</div><div class="line"><span class="keyword">for</span> var <span class="keyword">in</span> <span class="variable">$&#123;list[*]&#125;</span></div><div class="line"><span class="keyword">do</span></div><div class="line">	<span class="keyword">if</span> [ <span class="_">-e</span> /sys/class/gpio/gpio<span class="variable">$var</span> ]</div><div class="line">	<span class="keyword">then</span></div><div class="line">	 	<span class="built_in">echo</span> “exist”</div><div class="line">	<span class="keyword">else</span></div><div class="line">		<span class="built_in">echo</span> <span class="variable">$var</span> &gt; /sys/class/gpio/<span class="built_in">export</span></div><div class="line">	<span class="keyword">fi</span></div><div class="line">	<span class="built_in">echo</span> out &gt; /sys/class/gpio/gpio<span class="variable">$var</span>/direction</div><div class="line">    <span class="built_in">echo</span> 1 &gt; /sys/class/gpio/gpio<span class="variable">$var</span>/value</div><div class="line"><span class="keyword">done</span></div></pre></td></tr></table></figure>
