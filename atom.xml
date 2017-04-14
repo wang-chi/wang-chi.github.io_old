@@ -56,9 +56,9 @@
     
       <category term="raspberry" scheme="http://yoursite.com/tags/raspberry/"/>
     
-      <category term="code" scheme="http://yoursite.com/tags/code/"/>
-    
       <category term="raspberry pi" scheme="http://yoursite.com/tags/raspberry-pi/"/>
+    
+      <category term="code" scheme="http://yoursite.com/tags/code/"/>
     
   </entry>
   
