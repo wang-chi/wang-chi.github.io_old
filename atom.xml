@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-14T08:37:47.000Z</updated>
+  <updated>2017-04-15T15:23:09.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,13 +20,14 @@
     <link href="http://yoursite.com/2017/04/14/%E5%89%8D%E7%AB%AF%E7%A4%BE%E7%BE%A4%E7%AD%86%E8%A8%98/"/>
     <id>http://yoursite.com/2017/04/14/前端社群筆記/</id>
     <published>2017-04-14T07:22:00.000Z</published>
-    <updated>2017-04-14T08:37:47.000Z</updated>
+    <updated>2017-04-15T15:23:09.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="Title"><a href="#Title" class="headerlink" title="Title"></a>Title</h3><p>終結對JS的&lt;/朦朧懂&gt;<br>完全瞭解JS的事件觸發與異步處理</p>
 <p>昨天去台中前端社群的小聚會<br><br>因為對<code>JavaScript</code>的程度應該不是矇矇懂這麼<del>高級</del>了<br>所以還是去學一下人家的知識吧</p>
 <p>後半對是透過問答的方式進行</p>
 <h4 id="Q1-JS的變數傳遞是依照value還是reference"><a href="#Q1-JS的變數傳遞是依照value還是reference" class="headerlink" title="Q1 JS的變數傳遞是依照value還是reference?"></a>Q1 JS的變數傳遞是依照value還是reference?</h4><p>Question<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//1</span></div><div class="line"><span class="keyword">var</span> foo = <span class="number">1</span>;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">bar</span>(<span class="params">foo</span>) </span>&#123;</div><div class="line">	foo = <span class="number">2</span>;</div><div class="line">&#125;</div><div class="line">bar(foo);</div><div class="line"><span class="built_in">console</span>.log(foo);</div></pre></td></tr></table></figure></p>
-<p>Answer<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">```</div><div class="line">Question</div><div class="line">```JavaScript</div><div class="line">//2</div><div class="line">var foo = &#123;name: &apos;peter&apos;&#125;;</div><div class="line">function bar(foo) &#123;</div><div class="line">	foo.name = &apos;mary&apos;;</div><div class="line">&#125;</div><div class="line">bar(foo);</div><div class="line">console.log(foo);</div></pre></td></tr></table></figure></p>
+<p>Answer<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">value · 2</div></pre></td></tr></table></figure></p>
+<p>Question<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//2</span></div><div class="line"><span class="keyword">var</span> foo = &#123;<span class="attr">name</span>: <span class="string">'peter'</span>&#125;;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">bar</span>(<span class="params">foo</span>) </span>&#123;</div><div class="line">	foo.name = <span class="string">'mary'</span>;</div><div class="line">&#125;</div><div class="line">bar(foo);</div><div class="line"><span class="built_in">console</span>.log(foo);</div></pre></td></tr></table></figure></p>
 <p>Answer<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">```</div><div class="line">Question</div><div class="line">```JavaScript</div><div class="line">//3</div><div class="line">var foo = &#123;name: &apos;peter&apos;&#125;;</div><div class="line">function bar() &#123;</div><div class="line">	foo = &#123;age: 6&#125;;</div><div class="line">&#125;</div><div class="line">bar();</div><div class="line">console.log(foo);</div></pre></td></tr></table></figure></p>
 <p>Answer<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">```</div><div class="line"></div><div class="line">#### Q2 關於“use strict”的描述何者錯誤?</div></pre></td></tr></table></figure></p>
 <ol>
@@ -35,13 +36,13 @@
 <li>可刪除已宣告的變數或function</li>
 <li>可放在只想使用的區塊中，讓其他區塊保持非嚴格模式</li>
 <li><p>限制eval不能再度宣告變數</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Answer</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">Answer</div></pre></td></tr></table></figure>
 </li>
 <li><p>可刪除已宣告的變數或function<br>“use strict”;<br>var foo = 1;<br>delete foo;<br>//Uncaught SyntaxError: Delete of an unqualified identifier in strict mode.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">#### Q3 null的類別之謎</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">#### Q3 null的類別之謎</div></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>null的類別是什麼?<br>typeof(null)是什麼?<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Answer</div></pre></td></tr></table></figure></p>
+<p>null的類別是什麼?<br>typeof(null)是什麼?<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">Answer</div></pre></td></tr></table></figure></p>
 <p>null的類別是什麼？null<br>typeof(null)是什麼？object (其實是個錯誤，因為null本身就是類別，但太久了）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Link: [變數型態比較](http://dorey.github.io/JavaScript-Equality-Table/)</div><div class="line"></div><div class="line">#### Q4 ==與===的主要差別</div></pre></td></tr></table></figure></p>
 <ol>
 <li>‘1’ == 1 // true</li>
