@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-19T08:21:31.000Z</updated>
+  <updated>2017-04-25T04:19:34.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,62 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>樹莓派－七段顯示器（Function）</title>
+    <link href="http://yoursite.com/2017/04/25/%E6%A8%B9%E8%8E%93%E6%B4%BE%EF%BC%8D%E4%B8%83%E6%AE%B5%E9%A1%AF%E7%A4%BA%E5%99%A8%EF%BC%88Function%EF%BC%89/"/>
+    <id>http://yoursite.com/2017/04/25/樹莓派－七段顯示器（Function）/</id>
+    <published>2017-04-25T04:09:04.000Z</published>
+    <updated>2017-04-25T04:19:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>先把顯示的東西用成function</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> gpio_open &#123;</div><div class="line">        <span class="keyword">if</span> [ <span class="_">-e</span> /sys/class/gpio/gpio<span class="variable">$1</span> ]</div><div class="line">        <span class="keyword">then</span></div><div class="line">                <span class="built_in">echo</span> <span class="string">"/sys/class/gpio/gpio<span class="variable">$1</span> existed"</span></div><div class="line">        <span class="keyword">else</span></div><div class="line">                <span class="built_in">echo</span> <span class="variable">$1</span> &gt; /sys/class/gpio/<span class="built_in">export</span></div><div class="line">        <span class="keyword">fi</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">function</span> gpio_out &#123;</div><div class="line">        <span class="built_in">echo</span> out &gt; /sys/class/gpio/gpio<span class="variable">$1</span>/direction</div><div class="line">        <span class="built_in">echo</span> 1 &gt; /sys/class/gpio/gpio<span class="variable">$1</span>/value</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">function</span> gpio_off &#123;</div><div class="line">        <span class="built_in">echo</span> out &gt; /sys/class/gpio/gpio<span class="variable">$1</span>/direction</div><div class="line">        <span class="built_in">echo</span> 0 &gt; /sys/class/gpio/gpio<span class="variable">$1</span>/value</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">function</span> gpio_in &#123;</div><div class="line">        <span class="built_in">echo</span> <span class="keyword">in</span> &gt; /sys/class/gpio/gpio<span class="variable">$1</span>/direction</div><div class="line">&#125;</div><div class="line"></div><div class="line">gpio_open 19</div><div class="line">gpio_open 20</div><div class="line">gpio_open 21</div><div class="line"></div><div class="line">gpio_out 19</div><div class="line">gpio_out 20</div><div class="line"></div><div class="line">gpio_open <span class="variable">$1</span></div><div class="line">gpio_in <span class="variable">$1</span></div><div class="line"></div><div class="line"><span class="keyword">while</span> [ 1 <span class="_">-eq</span> 1 ]</div><div class="line"><span class="keyword">do</span></div><div class="line">        value=`cat /sys/class/gpio/gpio<span class="variable">$1</span>/value`</div><div class="line">        <span class="built_in">echo</span> <span class="variable">$value</span></div><div class="line">        <span class="keyword">if</span> [ <span class="variable">$value</span> <span class="_">-eq</span> 1 ]</div><div class="line">        <span class="keyword">then</span></div><div class="line">                gpio_out</div><div class="line">                <span class="built_in">echo</span> <span class="string">"out 21"</span></div><div class="line">        <span class="keyword">else</span></div><div class="line">                gpio_off 21</div><div class="line">                <span class="built_in">echo</span> <span class="string">"in 21"</span></div><div class="line">        <span class="keyword">fi</span></div><div class="line">        sleep 1</div><div class="line"><span class="keyword">done</span></div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;先把顯示的東西用成function&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Bash Shell:Function</title>
+    <link href="http://yoursite.com/2017/04/25/Bash-Shell-Function/"/>
+    <id>http://yoursite.com/2017/04/25/Bash-Shell-Function/</id>
+    <published>2017-04-25T02:08:00.000Z</published>
+    <updated>2017-04-25T04:13:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天的小</p>
+<h3 id="加法"><a href="#加法" class="headerlink" title="加法"></a>加法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#!/bin/bash</span></div><div class="line"></div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">add</span></span>( ) &#123;</div><div class="line">	<span class="built_in">return</span> $((<span class="variable">$1</span>+<span class="variable">$2</span>))</div><div class="line">&#125;</div><div class="line"></div><div class="line">add 1 2</div><div class="line">add 3 4</div></pre></td></tr></table></figure>
+<h3 id="打開port"><a href="#打開port" class="headerlink" title="打開port"></a>打開port</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> gpio_open &#123;</div><div class="line">        <span class="keyword">if</span> [ <span class="_">-e</span> /sys/class/gpio/gpio<span class="variable">$1</span> ]</div><div class="line">        <span class="keyword">then</span></div><div class="line">                <span class="built_in">echo</span> <span class="string">"/sys/class/gpio/gpio<span class="variable">$1</span> existed"</span></div><div class="line">        <span class="keyword">else</span></div><div class="line">                <span class="built_in">echo</span> <span class="variable">$1</span> &gt; /sys/class/gpio/<span class="built_in">export</span></div><div class="line">        <span class="keyword">fi</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">function</span> gpio_out &#123;</div><div class="line">        <span class="built_in">echo</span> out &gt; /sys/class/gpio/gpio<span class="variable">$1</span>/direction</div><div class="line">        <span class="built_in">echo</span> 1 &gt; /sys/class/gpio/gpio<span class="variable">$1</span>/value</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">function</span> gpio_off &#123;</div><div class="line">        <span class="built_in">echo</span> out &gt; /sys/class/gpio/gpio<span class="variable">$1</span>/direction</div><div class="line">        <span class="built_in">echo</span> 0 &gt; /sys/class/gpio/gpio<span class="variable">$1</span>/value</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">function</span> gpio_in &#123;</div><div class="line">        <span class="built_in">echo</span> <span class="keyword">in</span> &gt; /sys/class/gpio/gpio<span class="variable">$1</span>/direction</div><div class="line">&#125;</div><div class="line"></div><div class="line">gpio_open 19</div><div class="line">gpio_open 20</div><div class="line">gpio_open 21</div><div class="line"></div><div class="line">gpio_out 19</div><div class="line">gpio_out 20</div><div class="line"></div><div class="line">gpio_open <span class="variable">$1</span></div><div class="line">gpio_in <span class="variable">$1</span></div><div class="line"></div><div class="line"><span class="keyword">while</span> [ 1 <span class="_">-eq</span> 1 ]</div><div class="line"><span class="keyword">do</span></div><div class="line">        value=`cat /sys/class/gpio/gpio<span class="variable">$1</span>/value`</div><div class="line">        <span class="built_in">echo</span> <span class="variable">$value</span></div><div class="line">        <span class="keyword">if</span> [ <span class="variable">$value</span> <span class="_">-eq</span> 1 ]</div><div class="line">        <span class="keyword">then</span></div><div class="line">                gpio_out</div><div class="line">                <span class="built_in">echo</span> <span class="string">"out 21"</span></div><div class="line">        <span class="keyword">else</span></div><div class="line">                gpio_off 21</div><div class="line">                <span class="built_in">echo</span> <span class="string">"in 21"</span></div><div class="line">        <span class="keyword">fi</span></div><div class="line">        sleep 1</div><div class="line"><span class="keyword">done</span></div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天的小&lt;/p&gt;
+&lt;h3 id=&quot;加法&quot;&gt;&lt;a href=&quot;#加法&quot; class=&quot;headerlink&quot; title=&quot;加法&quot;&gt;&lt;/a&gt;加法&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;
+    
+    </summary>
+    
+      <category term="Note" scheme="http://yoursite.com/categories/Note/"/>
+    
+    
+      <category term="bash" scheme="http://yoursite.com/tags/bash/"/>
+    
+      <category term="shell" scheme="http://yoursite.com/tags/shell/"/>
+    
+      <category term="bash shell" scheme="http://yoursite.com/tags/bash-shell/"/>
+    
+      <category term="function" scheme="http://yoursite.com/tags/function/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Bash Shell：變數篇</title>
     <link href="http://yoursite.com/2017/04/16/Bash-Shell%EF%BC%9A%E8%AE%8A%E6%95%B8%E7%AF%87/"/>
     <id>http://yoursite.com/2017/04/16/Bash-Shell：變數篇/</id>
     <published>2017-04-16T03:38:00.000Z</published>
-    <updated>2017-04-19T08:21:31.000Z</updated>
+    <updated>2017-04-20T15:18:11.000Z</updated>
     
     <content type="html"><![CDATA[<p>會依序介紹<code>變數</code>➜運算➜判斷式➜迴圈➜函式</p>
 <p>一般來說我們在其他程式語言為宣告這個變數是字串、字元、數字<br>但在shell裡面不用<br>shell 會自己將要運算的變數轉為數字來運算</p>
@@ -29,8 +80,8 @@
 <h4 id="單引號：表示內含有變數"><a href="#單引號：表示內含有變數" class="headerlink" title="單引號：表示內含有變數"></a>單引號：表示內含有變數</h4><p>使用單引號的話，在顯示字串時只會顯示變數名稱，而不會將該變數轉換字串<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ var=’test string’</div><div class="line">$ newvar=’Value of var is $var’</div><div class="line">$ echo $newvar</div><div class="line">&gt; Value of var is $var</div></pre></td></tr></table></figure></p>
 <h3 id="The-export-command"><a href="#The-export-command" class="headerlink" title="The export command"></a>The export command</h3><p>The export command puts a variable into the environment so it will be accessible to child processes. For instance:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">$ x=hello</div><div class="line">$ bash	 	# Run a child shell.</div><div class="line">$ echo $x	# Nothing in x.</div><div class="line">$ exit		# Return to parent.</div><div class="line">$ export x</div><div class="line">$ bash</div><div class="line">$ echo $x</div><div class="line">&gt; hello		# It&apos;s there.</div></pre></td></tr></table></figure></p>
 <p>If the child modifies x, it will not modify the parent’s original value. Verify this by changing  x in the following way:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ x=ciao</div><div class="line">$ exit</div><div class="line">$ echo $x </div><div class="line">&gt; hello</div></pre></td></tr></table></figure></p>
-<h3 id="Environmental-Variables"><a href="#Environmental-Variables" class="headerlink" title="Environmental Variables"></a>Environmental Variables</h3><p>有兩種變數：<code>Local variables</code> 和 <code>Environmental variables</code></p>
-<p>Environmental variables are set by the system and can usually be found by using the env command. Environmental variables hold special values. For instance:</p>
+<h3 id="環境變數"><a href="#環境變數" class="headerlink" title="環境變數"></a>環境變數</h3><p>有兩種變數：<code>Local variables</code> 和 <code>Environmental variables</code></p>
+<p>直接下<code>set</code>會列出所有的環境變數<br>Environmental variables are set by the system and can usually be found by using the env command. Environmental variables hold special values. For instance:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ echo $SHELL</div><div class="line">&gt; /bin/bash</div><div class="line">$ echo $PATH</div><div class="line">&gt; /usr/X11R6/bin:/usr/local/bin:/bin:/usr/bin</div></pre></td></tr></table></figure>
 <p>Environmental variables are defined in <b>/etc/profile</b>, <b>/etc/profile.d/</b> and <b>~/.bash_profile</b>. These files are the <b>initialization files</b> and they are read when bash shell is invoked.</p>
 <p>When a login shell exits, bash reads <b>~/.bash_logout</b></p>
@@ -171,9 +222,9 @@
     
       <category term="raspberry" scheme="http://yoursite.com/tags/raspberry/"/>
     
-      <category term="code" scheme="http://yoursite.com/tags/code/"/>
-    
       <category term="raspberry pi" scheme="http://yoursite.com/tags/raspberry-pi/"/>
+    
+      <category term="code" scheme="http://yoursite.com/tags/code/"/>
     
   </entry>
   
