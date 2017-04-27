@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/Club/index.html</loc>
+    
+    <lastmod>2017-04-27T11:09:47.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/Activity/index.html</loc>
+    
+    <lastmod>2017-04-27T11:05:23.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/Adwards/index.html</loc>
     
-    <lastmod>2017-04-27T11:02:10.000Z</lastmod>
+    <lastmod>2017-04-27T11:04:43.000Z</lastmod>
     
   </url>
   
