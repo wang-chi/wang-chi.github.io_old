@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/Club/index.html</loc>
+    <loc>http://yoursite.com/Volunteer/index.html</loc>
     
-    <lastmod>2017-04-27T11:09:47.000Z</lastmod>
+    <lastmod>2017-04-27T11:41:34.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/About-me/index.html</loc>
+    
+    <lastmod>2017-04-27T11:33:52.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/Activity/index.html</loc>
     
-    <lastmod>2017-04-27T11:05:23.000Z</lastmod>
+    <lastmod>2017-04-27T11:31:45.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/Club/index.html</loc>
+    
+    <lastmod>2017-04-27T11:25:00.000Z</lastmod>
     
   </url>
   
@@ -75,13 +89,6 @@
     <loc>http://yoursite.com/2017/04/12/%E6%A8%B9%E8%8E%93%E6%B4%BE%EF%BC%8D%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</loc>
     
     <lastmod>2017-04-14T05:29:33.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/04/08/about/</loc>
-    
-    <lastmod>2017-04-13T09:51:58.000Z</lastmod>
     
   </url>
   
