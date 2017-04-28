@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/part-time/index.html</loc>
+    
+    <lastmod>2017-04-28T10:38:37.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/About-me/index.html</loc>
+    
+    <lastmod>2017-04-28T10:27:03.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2016MSP/index.html</loc>
     
     <lastmod>2017-04-28T10:12:57.000Z</lastmod>
@@ -58,13 +72,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/part-time/index.html</loc>
-    
-    <lastmod>2017-04-28T03:14:53.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/Volunteer/index.html</loc>
     
     <lastmod>2017-04-28T03:14:13.000Z</lastmod>
@@ -96,13 +103,6 @@
     <loc>http://yoursite.com/2017MSP/index.html</loc>
     
     <lastmod>2017-04-28T02:40:23.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/About-me/index.html</loc>
-    
-    <lastmod>2017-04-27T13:31:25.000Z</lastmod>
     
   </url>
   
