@@ -36,11 +36,11 @@
   </entry>
   
   <entry>
-    <title>Bash Shell:Function</title>
+    <title>Bash Shell：Function</title>
     <link href="http://yoursite.com/2017/04/25/Bash-Shell-Function/"/>
     <id>http://yoursite.com/2017/04/25/Bash-Shell-Function/</id>
     <published>2017-04-25T02:08:00.000Z</published>
-    <updated>2017-04-25T04:13:45.000Z</updated>
+    <updated>2017-05-02T01:54:42.000Z</updated>
     
     <content type="html"><![CDATA[<p>今天的小</p>
 <h3 id="加法"><a href="#加法" class="headerlink" title="加法"></a>加法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#!/bin/bash</span></div><div class="line"></div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">add</span></span>( ) &#123;</div><div class="line">	<span class="built_in">return</span> $((<span class="variable">$1</span>+<span class="variable">$2</span>))</div><div class="line">&#125;</div><div class="line"></div><div class="line">add 1 2</div><div class="line">add 3 4</div></pre></td></tr></table></figure>
@@ -222,9 +222,9 @@
     
       <category term="raspberry" scheme="http://yoursite.com/tags/raspberry/"/>
     
-      <category term="code" scheme="http://yoursite.com/tags/code/"/>
-    
       <category term="raspberry pi" scheme="http://yoursite.com/tags/raspberry-pi/"/>
+    
+      <category term="code" scheme="http://yoursite.com/tags/code/"/>
     
   </entry>
   
