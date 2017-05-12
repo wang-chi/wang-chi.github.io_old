@@ -36,7 +36,8 @@ fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}
 legend{border:0;padding:0}
 textarea{overflow:auto}
 optgroup{font-weight:bold}
-table{border-collapse:collapse;border-spacing:0}td,th{padding:0}::-moz-selection{color:#FFFFFF;background-color:#00bcd4}::selection{color:#FFFFFF;background-color:#2978A0}
+table{border-collapse:collapse;border-spacing:0}
+td,th{padding:0}::-moz-selection{color:#FFFFFF;background-color:#00bcd4}::selection{color:#FFFFFF;background-color:#2978A0}
 html,body{width:100%;height:100%}
 body{margin:0;color:#34495e;font-size:15px;line-height:1.6;background-color:#fff;font-family:'sourcesanspro', 'Helvetica Neue', Arial, sans-serif}
 ul.nav,ul.post-list{margin:0;padding:0;list-style-type:none}
@@ -67,7 +68,8 @@ header .nav-list-item a{font-size:16px;line-height:1.4}
 .archive .post-title-link{display:block;margin-left:125px;color:#063360;word-break:break-all}
 .archive .post-title-link:hover{border-bottom:0;color:#2978A0}
 .archive .post-info{float:left;width:125px;color:#7f8c8d}
-.post{padding-top:1em}.post-block .post-title{margin:0.65em 0;color:#2c3e50;font-size:1.5em}
+.post{padding-top:1em}
+.post-block .post-title{margin:0.65em 0;color:#2c3e50;font-size:1.5em}
 .post-block .post-info{color:#7f8c8d;margin:1.2em 0}
 .post-block .post-info span{margin-left:0.5rem}
 .post-block .post-info a.post-from{margin-left:0.5rem;padding:3px 6px;border-radius:5px;font-size:12px;color:white;background-color:#E36B6B}
@@ -124,7 +126,7 @@ pre .deletion{color:#BA4545}
 pre .coffeescript .javascript,pre .javascript .xml,pre .tex .formula,pre .xml .javascript,pre .xml .vbscript,pre .xml .css,pre .xml .cdata{opacity:0.5}
 .paginator{margin:4em 0;text-align:center}
 .paginator .prev,.paginator .next{display:inline-block;margin:0 4px;padding:4px 12px;border-radius:4px;border-bottom:4px solid #3a79a3;font-size:14px;color:#fff;background-color:#4fa1c0}
-.paginator .prev:hover,.paginator .next:hover{background-color:#22bd77}
+.paginator .prev:hover,.paginator .next:hover{background-color:#34495E}
 .ds-thread,#disqus_thread{margin-bottom:2em}
 main.container{margin:2em 10px}
 @media screen and (min-width: 700px){.wrap{width:700px;margin:0 auto}header{padding:20px 100px}}
