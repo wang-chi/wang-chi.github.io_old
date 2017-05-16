@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-05-16T03:52:24.000Z</updated>
+  <updated>2017-05-16T03:53:41.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>樹莓派－PWN</title>
-    <link href="http://yoursite.com/2017/05/09/%E6%A8%B9%E8%8E%93%E6%B4%BE/"/>
-    <id>http://yoursite.com/2017/05/09/樹莓派/</id>
-    <published>2017-05-09T02:11:24.000Z</published>
-    <updated>2017-05-16T03:52:24.000Z</updated>
+    <title>樹莓派－PWM</title>
+    <link href="http://yoursite.com/2017/05/09/%E6%A8%B9%E8%8E%93%E6%B4%BE-PWM/"/>
+    <id>http://yoursite.com/2017/05/09/樹莓派-PWM/</id>
+    <published>2017-05-09T02:11:00.000Z</published>
+    <updated>2017-05-16T03:53:41.000Z</updated>
     
     <content type="html"><![CDATA[<p>彩色的LED<br>有一隻腳比較長叫做共用腳<br>這顆是共陽極</p>
 <p>有分共陽極和共陰極<br>由左至右：Ｒ－共用腳－Ｇ－Ｂ</p>
@@ -43,6 +43,14 @@
     
     </summary>
     
+      <category term="Note" scheme="http://yoursite.com/categories/Note/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+      <category term="PWM" scheme="http://yoursite.com/tags/PWM/"/>
+    
+      <category term="raspberry" scheme="http://yoursite.com/tags/raspberry/"/>
     
   </entry>
   
