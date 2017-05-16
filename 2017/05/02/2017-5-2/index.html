@@ -1,0 +1,53 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 2017/5/2 Python 小筆記 · Wang Chi</title><meta name="description" content="2017/5/2 Python 小筆記 - Wang Chi"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://yoursite.com/atom.xml" title="Wang Chi"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/About-me/" target="_self" class="nav-list-link">ABOUT ME</a></li><li class="nav-list-item"><a href="/categories" target="_self" class="nav-list-link">CATEGORY</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">2017/5/2 Python 小筆記</h1><div class="post-info">May 2, 2017</div><div class="post-content"><p>上次教完所有的bash 大概啦<br>今天就要上的是Python</p>
+<p>Python 不需要分號;;;;;<br>是利用縮排來做大括號的結尾<br>這就表示縮排排版要認真使用<br>然後老師表示 縮排不要用<code>tab</code><br>用4或5個空白來做(一般來說tab為4~5個空白鍵 似乎可以設定要幾個？）</p>
+<p>Python無法判別空白和[ tab ]<br>Python是屬於直譯的程式<br>可以直接執行<br>可以直接操作也可以存成python檔</p>
+<p>檔名習慣加上.py 不算是副檔名 即使不寫也沒關係</p>
+<h3 id="變數"><a href="#變數" class="headerlink" title="變數"></a>變數</h3><p>不強制型態（C/C++就會強制型態）<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">x=<span class="number">5</span></div><div class="line">type(x)</div><div class="line">&lt;type <span class="string">'int'</span>&gt;</div><div class="line">x=<span class="string">"this is text"</span></div><div class="line">type(x)</div><div class="line">&lt;type <span class="string">'str'</span>&gt;</div><div class="line">x=<span class="number">5.0</span></div><div class="line">type(x)</div><div class="line">&lt;type <span class="string">'float'</span>&gt;</div></pre></td></tr></table></figure></p>
+<h4 id="運算符號"><a href="#運算符號" class="headerlink" title="運算符號"></a>運算符號</h4><h5 id="次分"><a href="#次分" class="headerlink" title="次分"></a>次分</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="number">2</span>**<span class="number">3</span></div><div class="line"><span class="number">8</span></div></pre></td></tr></table></figure>
+<h4 id="函式庫"><a href="#函式庫" class="headerlink" title="函式庫"></a>函式庫</h4><p>必須要import進去（跟C/ C++一樣）<br><code>import math</code><br>如果只要單一個的話就 <code>from math import *</code></p>
+<h4 id="邏輯運算"><a href="#邏輯運算" class="headerlink" title="邏輯運算"></a>邏輯運算</h4><table>
+<thead>
+<tr>
+<th style="text-align:center">and</th>
+<th style="text-align:center">or</th>
+<th style="text-align:center">not</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">短文本</td>
+<td style="text-align:center">中等文本</td>
+<td style="text-align:center">稍微长一点的文本</td>
+</tr>
+<tr>
+<td style="text-align:center">稍微长一点的文本</td>
+<td style="text-align:center">短文本</td>
+<td style="text-align:center">中等文本</td>
+</tr>
+</tbody>
+</table>
+<p>| and |<br>| or  |<br>| not |</p>
+<h4 id="判斷式"><a href="#判斷式" class="headerlink" title="判斷式"></a>判斷式</h4><p>用：為結尾<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">if &lt;condition&gt;:</div><div class="line">    &lt;statements&gt;</div></pre></td></tr></table></figure></p>
+<p>Example<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">x=5</div><div class="line">if x&gt;4</div><div class="line">    print(&quot;x is greater than 4&quot;)</div><div class="line">print(&quot;This is not in the scope of the if&quot;)</div></pre></td></tr></table></figure></p>
+<h4 id="迴圈"><a href="#迴圈" class="headerlink" title="迴圈"></a>迴圈</h4><h4 id="字串Strings"><a href="#字串Strings" class="headerlink" title="字串Strings"></a>字串Strings</h4><p>多行輸入就要<br>“””this is</p>
+<p>“””</p>
+<p>\t    table<br>\n    new line<br>\”    question<br>\    backskash character</p>
+<h5 id="String-Function"><a href="#String-Function" class="headerlink" title="String Function"></a>String Function</h5><p>len    長度<br>str.lower 轉成小寫<br>str.upper 轉成大寫</p>
+<p>str.isalpha 判斷是否為單一字元</p>
+<h5 id="Byte-Arrays-and-Strings"><a href="#Byte-Arrays-and-Strings" class="headerlink" title="Byte Arrays and Strings"></a>Byte Arrays and Strings</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cmd = response.read()</div><div class="line">strCmd = str(cmd)</div></pre></td></tr></table></figure>
+<h5 id="Tuples"><a href="#Tuples" class="headerlink" title="Tuples"></a>Tuples</h5><p>設定為之後就不能在作更改</p>
+<h4 id="Lists"><a href="#Lists" class="headerlink" title="Lists"></a>Lists</h4><p>這個就可以做修改<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">breakfast = [<span class="string">"coffee"</span>, <span class="string">"tea"</span>, <span class="string">"toast"</span>, <span class="string">"egg"</span>]</div><div class="line">breakfast.append(<span class="string">"waffles"</span>)</div><div class="line">breakfast.extend([<span class="string">"cereal"</span>, <span class="string">"juice"</span>])</div></pre></td></tr></table></figure></p>
+<h4 id="Dictionaries"><a href="#Dictionaries" class="headerlink" title="Dictionaries"></a>Dictionaries</h4><p>用文字去對應某項東西<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">sales = &#123;&#125;</div><div class="line">sales[<span class="string">"January"</span>] = <span class="number">10000</span></div><div class="line">sales[<span class="string">"February"</span>] = <span class="number">17000</span></div><div class="line">sales[<span class="string">"March"</span>] = <span class="number">16500</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>sales[<span class="string">"March"</span>]</div><div class="line"><span class="number">16500</span></div></pre></td></tr></table></figure></p>
+<h4 id="Sets-集合"><a href="#Sets-集合" class="headerlink" title="Sets 集合"></a>Sets 集合</h4><p>集合不能重複<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">fruit=set(&quot;apple&quot;)</div></pre></td></tr></table></figure></p>
+<h4 id="Functions"><a href="#Functions" class="headerlink" title="Functions"></a>Functions</h4><p>Define a function<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">def &lt;function&gt;(&lt;parameter list&gt;):</div></pre></td></tr></table></figure></p>
+<p>要冒號做結尾<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure></p>
+<h4 id="Error-Handling"><a href="#Error-Handling" class="headerlink" title="Error Handling"></a>Error Handling</h4><p>try:<br>    if <con>:</con></p>
+</div></article></div></main><footer><div class="paginator"><a href="/2017/05/09/樹莓派/" class="prev">上一則</a><a href="/2017/04/25/樹莓派－七段顯示器（Function）/" class="next">下一則</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'TechChi';
+var disqus_identifier = '2017/05/02/2017-5-2/';
+var disqus_title = '2017/5/2 Python 小筆記';
+var disqus_url = 'http://yoursite.com/2017/05/02/2017-5-2/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//TechChi.disqus.com/count.js" async></script><div class="copyright"><p>© 2017 <a href="http://yoursite.com">Wang Chi</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>
